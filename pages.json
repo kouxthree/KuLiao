@@ -2,49 +2,21 @@
     "pages" : [
         //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
         {
-            "path" : "pages/index/index",
+            "path" : "pages/index",
             "style" : {
                 "navigationBarTitleText" : "KuLiao"
             }
         },
         {
+            "path" : "pages/startmain",
+            "style" : {
+                "navigationBarTitleText" : "KuLiao",
+				"enablePullDownRefresh":true//开启下拉刷新
+            }
+        },
+        {
             "path" : "App",
             "style" : {}
-        },
- {
-	"path": "pages/component/index",
-	"style": {
-	  "navigationBarTitleText": "组件"
-	}
-  },
-  {
-	"path": "pages/API/index",
-	"style": {
-	  "navigationBarTitleText": "接口"
-	}
-  },
-  {
-	"path": "pages/component/view/index",
-	"style": {
-	  "navigationBarTitleText": "view"
-	}
-  }
-	],
-    "globalStyle" : {
-        "navigationBarTextStyle" : "black",
-        "navigationBarTitleText" : "KuLiao",
-        "navigationBarBackgroundColor" : "#F8F8F8",
-        "backgroundColor" : "#F8F8F8"
-    },
-    "condition" : {
-        //Mode configuration, effective only during development period.
-        "current" : 0, //Current active mode (index entry of list)
-        "list" : [
-            {
-                "name" : "", //mode name
-                "path" : "", //startup page, can not be empty
-                "query" : "" //The startup parameters are obtained in the onLoad function of the page.
-            }
-        ]
-    }
+        }
+    ]
 }
